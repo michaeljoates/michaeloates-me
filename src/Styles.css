@@ -1,0 +1,79 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif; /* Main font */
+    color: #ffffff; /* Primary text color */
+    background-color: #031728; /* Background color */
+  }
+  
+  a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: #031728; /* White background for header */
+    padding: 15px 0; /* Padding around header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .header .logo {
+    font-size: 1.5em; /* Logo font size */
+    font-weight: bold; /* Bold logo */
+  }
+  
+  .header nav ul {
+    list-style: none; /* Remove default list style */
+    padding: 0; /* Remove padding */
+    display: flex; /* Flex layout for navigation items */
+    justify-content: center; /* Center navigation items */
+  }
+  
+  .header nav ul li {
+    margin: 0 10px; /* Margin between navigation items */
+  }
+  
+  .header nav ul li a {
+    color: #333; /* Navigation link color */
+    font-weight: bold; /* Bold navigation links */
+  }
+  
+  /* Introduction Styles */
+  .introduction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: left; /* Center text in introduction */
+    padding: 50px; /* Padding around introduction */
+    margin: 20px;
+  }
+  
+  .introduction h1 {
+    font-size: 4.0em; /* Large font size for main heading */
+    color: #66fcf1; /* Color for main heading */
+  }
+  
+  .introduction p {
+    font-size: 1.2em; /* Font size for introduction text */
+  }
+
+  .text-content {
+    flex: 1;
+    padding-right: 0px;
+    max-width: 500px;
+  }
+
+  .image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-content img {
+    max-width: 40%;
+    height: auto;
+  }
+  
+  /* Other component styles can be added here following the same pattern. */
+  
