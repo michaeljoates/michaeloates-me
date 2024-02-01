@@ -1,7 +1,7 @@
 import Introduction from "../components/homePageComponents/Introduction.js";
 import Skills from "../components/homePageComponents/Skills.js";
   
-  function Main() {
+  function HomePage() {
     return (
       <div>
         <Introduction />
@@ -10,4 +10,4 @@ import Skills from "../components/homePageComponents/Skills.js";
     );
   }
   
-  export default Main;
+  export default HomePage;

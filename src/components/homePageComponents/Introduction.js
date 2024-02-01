@@ -1,4 +1,5 @@
 import React from 'react';
+import mikePic from '../../assets/mike.jpg'
 
 function Introduction() {
   return (
@@ -13,7 +14,7 @@ function Introduction() {
       </div>
       <div class="image-content">
         {/* Add an image if you have one */}
-        <img src="http://michaeloates.me/wp-content/uploads/2023/03/NICE-IMG_1269-768x1024.jpg" alt="Your Name" />
+        <img src={mikePic} alt="Michael Oates" />
       </div>
     </div>
   );

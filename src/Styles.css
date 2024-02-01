@@ -1,24 +1,32 @@
+:root {
+  --deep-blue: #031728;
+  --mild-blue: #041C2D;
+  --text-white: #ffffff;
+  --highlight: #66fcf1;
+}
+
+
 /* General Styles */
 body {
     font-family: 'Open Sans', sans-serif; /* Main font */
-    color: #ffffff; /* Primary text color */
-    background-color: #031728; /* Background color */
+    color: var(--text-white); /* Primary text color */
+    background-color: var(--deep-blue); /* Background color */
   }
   
   a {
-    color: #007bff; /* Link color */
+    color: var(--text-white); /* Link color */
     text-decoration: none; /* Remove underline */
   }
   
   /* Header Styles */
   .header {
-    background-color: #031728;
+    background-color: var(--mild-blue);
     padding: 15px 0; /* Padding around header */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   }
   
   .header .logo {
-    font-size: 1.5em; /* Logo font size */
+    font-size: 2.5em; /* Logo font size */
     font-weight: bold; /* Bold logo */
   }
   
@@ -34,8 +42,9 @@ body {
   }
   
   .header nav ul li a {
-    color: #333; /* Navigation link color */
+    color: #ffffff; /* Navigation link color */
     font-weight: bold; /* Bold navigation links */
+    font-size: 1.5em;
   }
   
   /* Introduction Styles */
@@ -46,12 +55,15 @@ body {
     padding: 20px;
     text-align: left; /* Center text in introduction */
     padding: 50px; /* Padding around introduction */
-    margin: 20px;
+    margin: 0 auto;
+    font-family: Arial;
+    max-width: 1700px;
   }
   
   .introduction h1 {
     font-size: 4.0em; /* Large font size for main heading */
-    color: #66fcf1; /* Color for main heading */
+    color: #ffffff; /* Color for main heading */
+    font-family: sans-serif;
   }
   
   .introduction p {
@@ -59,16 +71,15 @@ body {
   }
 
   .text-content {
-    flex: 1;
-    padding-right: 0px;
-    justify-content: right;
+    flex: 5;
+    margin: 0 auto;
     max-width: 500px;
+    font-family: Arial;
   }
 
   .image-content {
     flex: 1;
     display: flex;
-    padding-left: 80px;
     justify-content: center;
   }
 
@@ -78,8 +89,11 @@ body {
   }
 
   .skills-section {
-    background-color: #0d2438;
+    background-color: var(--deep-blue);
     color: #fff;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1300px;
     padding: 40px;
   }
   
@@ -91,14 +105,15 @@ body {
   
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* Creates three columns */
+    grid-template-rows: repeat(2, auto); /* Creates two rows */
     gap: 20px;
   }
   
   .skill-item {
-    background-color: #112d42;
+    background-color: var(--mild-blue);
     padding: 20px;
-    border-left: 5px solid #00b4d8; /* Replace with the color of your choice */
+    border-left: 3px solid var(--highlight); /* Replace with the color of your choice */
     margin-bottom: 20px;
   }
   

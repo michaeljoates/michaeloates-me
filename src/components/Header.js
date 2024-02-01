@@ -7,7 +7,7 @@ function Header() {
     <header className="header">
       <div className="logo">
         {/* Replace "Your Site Name" with your actual site name or logo */}
-        <NavLink to="/">Your Site Name</NavLink>
+        <NavLink to="/">Michael Oates</NavLink>
       </div>
       <nav>
         <ul>
