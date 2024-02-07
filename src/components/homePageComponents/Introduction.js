@@ -13,7 +13,6 @@ function Introduction() {
           I grew up in Brisbane, and went to school at St. Laurence’s College in South Brisbane. Since graduating, I’ve studied at the Southbank Institute of Technology and the University of Queensland.</p>
       </div>
       <div class="image-content">
-        {/* Add an image if you have one */}
         <img src={mikePic} alt="Michael Oates" />
       </div>
     </div>

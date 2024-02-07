@@ -3,12 +3,15 @@
   --mild-blue: #041C2D;
   --text-white: #ffffff;
   --highlight: #66fcf1;
+  --footer-bg: #0e0d0d;
+  --footer-text: #fefefe;
+  --footer-about: #868e9a;
 }
 
 
 /* General Styles */
 body {
-    font-family: 'Open Sans', sans-serif; /* Main font */
+  font-family: 'Roboto', sans-serif; /* Main font */
     color: var(--text-white); /* Primary text color */
     background-color: var(--deep-blue); /* Background color */
   }
@@ -42,7 +45,7 @@ body {
   }
   
   .header nav ul li a {
-    color: #ffffff; /* Navigation link color */
+    color: var(--text-white); /* Navigation link color */
     font-weight: bold; /* Bold navigation links */
     font-size: 1.5em;
   }
@@ -56,14 +59,14 @@ body {
     text-align: left; /* Center text in introduction */
     padding: 50px; /* Padding around introduction */
     margin: 0 auto;
-    font-family: Arial;
+    font-family: 'Roboto', sans-serif;
     max-width: 1700px;
   }
   
   .introduction h1 {
     font-size: 4.0em; /* Large font size for main heading */
-    color: #ffffff; /* Color for main heading */
-    font-family: sans-serif;
+    color: var(--text-white); /* Color for main heading */
+    font-family: 'Roboto', sans-serif;
   }
   
   .introduction p {
@@ -74,7 +77,7 @@ body {
     flex: 5;
     margin: 0 auto;
     max-width: 500px;
-    font-family: Arial;
+    font-family: 'Roboto', sans-serif;
   }
 
   .image-content {
@@ -131,7 +134,63 @@ body {
     height: 50px;
     /* You may need to adjust the size of the image based on your actual icons */
   }
+
+  .footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    padding-top: 50px
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  
+  .footer-section {
+    flex: 1;
+  }
+
+  .footer-section.about {
+    /* Your specific styles for the "About Me" section */
+    max-width: 400px; /* Set a maximum width if desired */
+    color: var(--footer-about);
+    /* More styles like font size, line height, etc., can be added here */
+  }
   
   
+  .footer-section h3 {
+    color: var(--footer-text);
+    margin-bottom: 20px;
+  }
+
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #000000;
+  }
+  
+  .footer-bottom a {
+    color: #64ffda;
+    margin: 0 15px;
+  }
+
+  .footer a[href*="https://www.linkedin.com/in/michael-oates-00/"] {
+    color: #0e76a8; /* LinkedIn blue */
+    font-size: 2.5em;
+  }
+  
+  .footer a[href*="https://www.instagram.com/michaeljoates/"] {
+    color: #e1306c; /* Instagram pink */
+    font-size: 2.5em;
+  }
+  
+  /* Adjust margins, paddings, and colors to fit
   /* Other component styles can be added here following the same pattern. */
   
